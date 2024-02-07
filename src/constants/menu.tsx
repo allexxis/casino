@@ -1,13 +1,13 @@
 import Image from 'next/image';
-import { ChartPieIcon, ArchiveBoxIcon } from '@heroicons/react/24/outline';
-import { HomeIcon, CalculatorIcon } from '@heroicons/react/24/solid';
-const CashRegister = () => {
+
+const BasketBall = () => {
    return (
       <Image
-         src="/assets/cash-register.svg"
+         src="/assets/basketball.svg"
          alt="Home Icon"
-         width={32}
-         height={32}
+         className="h-8 w-auto"
+         width={8}
+         height={8}
          priority
       />
    );
@@ -29,13 +29,13 @@ const menu: Menu = {
       {
          name: 'home',
          href: '/app/pos/',
-         icon: CalculatorIcon,
+         icon: BasketBall,
          count: 5,
       },
       {
          name: 'products',
          href: '/app/products/',
-         icon: ArchiveBoxIcon,
+         icon: () => {},
          count: 5,
       },
    ],

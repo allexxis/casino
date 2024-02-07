@@ -10,25 +10,27 @@ interface SideBarItemProps {
 }
 const Item: FC<SideBarItemProps> = ({ name, href, active, ...rest }) => {
    return (
-      <li className="flex flex-1 h-10 w-10 mt-4" key={name}>
+      <li
+         className="flex flex-1 h-10 w-10 mt-4 items-center justify-center"
+         key={name}
+      >
          <Link
             href={href}
             className={classNames(
-               active ? ' text-icon-active' : 'bg-primary text-icon',
-               'group flex rounded-md  text-sm leading-6 font-semibold ',
-               'hover:text-icon-active flex flex-1'
+               active ? ' text-icon-active' : 'bg-primary text-white',
+               'group flex flex-1 rounded-md  text-sm leading-6 font-semibold'
             )}
          >
             <div
                id="sidebar-icon-container"
-               className="flex flex-1 items-center h-10 w-10 hover:bg-hover self-center rounded-md"
+               className="flex flex-1 items-center h-10 w-10 hover:bg-hover "
             >
                <rest.icon
                   className={classNames(
                      active
                         ? 'text-icon-active'
                         : 'text-icon group-hover:text-icon-active',
-                     'h-7 w-7 flex flex-1'
+                     'h-8 w-8 flex flex-1'
                   )}
                   aria-hidden="true"
                />

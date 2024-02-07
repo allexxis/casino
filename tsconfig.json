@@ -29,7 +29,8 @@
          "@lib/*": ["./src/lib/*"],
          "@config/*": ["./src/config/*"],
          "@locales/*": ["./src/locales/*"],
-         "@api/*": ["./src/pages/api/*"]
+         "@api/*": ["./src/pages/api/*"],
+         "@hooks/*": ["./src/hooks/*"]
       }
    },
    "include": [

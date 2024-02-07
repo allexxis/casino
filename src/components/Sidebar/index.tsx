@@ -4,7 +4,7 @@ import Image from 'next/image';
 import useTranslations from 'next-translate/useTranslation';
 import { usePathname } from 'next/navigation';
 import Item from './item';
-import { GlobeAltIcon } from '@heroicons/react/24/outline';
+
 export type SidebarProps = {
    children?: ReactNode;
 };
@@ -16,14 +16,13 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
    return (
       <div className="flex flex-none flex-col gap-y-5 overflow-y-auto bg-primary  w-16 min-h-full">
          <div className="flex h-16 shrink-0 items-center justify-center">
-            {/* <Image
+            <Image
                className="h-8 w-auto"
                width={8}
                height={8}
-               src="/assets/op.png"
+               src="/assets/basketball.svg"
                alt="POS LOGO"
-            /> */}
-            <GlobeAltIcon className="h-8 w-auto text-icon" />
+            />
          </div>
          <nav className="flex flex-1 flex-col">
             <ul
