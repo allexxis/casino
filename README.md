@@ -1,1 +1,3 @@
-# POS
+# casino
+
+Casino project
