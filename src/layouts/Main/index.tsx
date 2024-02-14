@@ -20,8 +20,14 @@ const Layout: FC<LayoutProps> = ({ children }) => {
          <div className="flex flex-1 flex-row min-h-screen ">
             <Sidebar />
 
-            <main className="flex flex-1 flex-col min-h-screen bg-neutral">
-               <header className="mt-4 w-full flex flex-row justify-between items-center bg-neutral  px-10">
+            <main className="flex flex-1 flex-col min-h-screen bg-primary">
+               <header
+                  className={classNames(
+                     'w-full flex flex-row justify-between',
+                     ' items-center bg-neutral px-10 shadow-md border-b',
+                     'bg-primary h-10'
+                  )}
+               >
                   {showSignIn && (
                      <>
                         <div
@@ -48,10 +54,10 @@ const Layout: FC<LayoutProps> = ({ children }) => {
                         </div>
                      </>
                   )}
-                  <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+                  <div className=" flex flex-1 justify-end">
                      <a
                         href="#"
-                        className="text-sm font-semibold leading-6 text-gray-900"
+                        className="text-sm font-semibold leading-6 text-white"
                         onClick={() => setShowSignIn(true)}
                      >
                         Iniciar sesión <span aria-hidden="true">&rarr;</span>

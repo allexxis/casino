@@ -5,7 +5,7 @@ const BasketBall = () => {
       <Image
          src="/assets/basketball.svg"
          alt="Home Icon"
-         className="h-8 w-auto"
+         className="h-5 w-auto"
          width={8}
          height={8}
          priority
@@ -27,15 +27,15 @@ export type Menu = {
 const menu: Menu = {
    items: [
       {
-         name: 'home',
+         name: 'Nuevo',
          href: '/app/pos/',
          icon: BasketBall,
          count: 5,
       },
       {
-         name: 'products',
+         name: 'Apuestas',
          href: '/app/products/',
-         icon: () => {},
+         icon: BasketBall,
          count: 5,
       },
    ],

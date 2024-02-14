@@ -33,7 +33,7 @@ class MyDocument extends Document {
 
    render() {
       return (
-         <Html lang="en">
+         <Html lang="en" className="bg-primary">
             <Head />
             <body className="h-screen w-screen">
                <Main />

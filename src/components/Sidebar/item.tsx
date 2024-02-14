@@ -11,30 +11,32 @@ interface SideBarItemProps {
 const Item: FC<SideBarItemProps> = ({ name, href, active, ...rest }) => {
    return (
       <li
-         className="flex flex-1 h-10 w-10 mt-4 items-center justify-center"
+         className="flex flex-1 h-10 w-full items-center justify-center py-1"
          key={name}
       >
          <Link
             href={href}
             className={classNames(
-               active ? ' text-icon-active' : 'bg-primary text-white',
-               'group flex flex-1 rounded-md  text-sm leading-6 font-semibold'
+               active
+                  ? ' text-icon-active  bg-gray-800 '
+                  : 'bg-primary text-white ',
+               'group flex flex-1 rounded-sm text-sm leading-6 font-semiboldh-8'
             )}
          >
             <div
                id="sidebar-icon-container"
-               className="flex flex-1 items-center h-10 w-10 hover:bg-hover "
+               className="ml-2 flex flex-1 items-center justify-center self-center h-5 w-5 hover:bg-hover "
             >
                <rest.icon
                   className={classNames(
                      active
                         ? 'text-icon-active'
                         : 'text-icon group-hover:text-icon-active',
-                     'h-8 w-8 flex flex-1'
+                     'flex flex-1'
                   )}
                   aria-hidden="true"
                />
-               {/* {name} */}
+               <p className="ml-2 flex-1">{name}</p>
                {/* {item.count ? (
           <span
              className="ml-auto w-9 min-w-max whitespace-nowrap rounded-full bg-indigo-600 px-2.5 py-0.5 text-center text-xs font-medium leading-5 text-white ring-1 ring-inset ring-indigo-500"
