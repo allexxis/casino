@@ -1,0 +1,15 @@
+{
+   "Main": {
+      "title": "POS EN"
+   },
+   "PosLayout": {
+      "page": {
+         "searchbar": "Search something",
+         "pos": "Point of sale"
+      }
+   },
+   "Sidebar": {
+      "home": "Home",
+      "products": "Products"
+   }
+}
