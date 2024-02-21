@@ -28,13 +28,13 @@ const menu: Menu = {
    items: [
       {
          name: 'Nuevo',
-         href: '/app/pos/',
+         href: '/',
          icon: BasketBall,
          count: 5,
       },
       {
          name: 'Apuestas',
-         href: '/app/products/',
+         href: '/',
          icon: BasketBall,
          count: 5,
       },

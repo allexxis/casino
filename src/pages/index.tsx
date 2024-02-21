@@ -24,25 +24,9 @@ export default function Index() {
             id="main-promotion"
             className="flex min-w-full h-[20rem] p-[2.4rem] "
          >
-            <div className="flex flex-1 justify-center space-x-[5rem] ">
-               <Image
-                  alt="player"
-                  src="/assets/players/csh.png"
-                  width={200}
-                  height={100}
-               />
-               <h2 className="text-white text-4xl font-bold text-center  self-center">
-                  VS
-               </h2>
-               <Image
-                  alt="player"
-                  src="/assets/players/lda.png"
-                  width={300}
-                  height={50}
-               />
-            </div>
+            <div className="flex flex-1 justify-center border-gray-600 border rounded-md "></div>
          </div>
-         <div className="p-[2.4rem]">
+         <div className="pl-[2.4rem] pr-[2.4rem]">
             <BetSelector />
             <BetsTable />
          </div>

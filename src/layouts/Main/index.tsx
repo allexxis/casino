@@ -24,7 +24,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
                <header
                   className={classNames(
                      'w-full flex flex-row justify-between',
-                     ' items-center bg-neutral px-10 shadow-md border-b',
+                     ' items-center bg-neutral px-10 shadow-md',
                      'bg-primary h-10'
                   )}
                >

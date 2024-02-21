@@ -11,16 +11,16 @@ interface SideBarItemProps {
 const Item: FC<SideBarItemProps> = ({ name, href, active, ...rest }) => {
    return (
       <li
-         className="flex flex-1 h-10 w-full items-center justify-center py-1"
+         className="flex flex-1 h-10 w-full items-center justify-center py-1 px-1"
          key={name}
       >
          <Link
             href={href}
             className={classNames(
                active
-                  ? ' text-icon-active  bg-gray-800 '
-                  : 'bg-primary text-white ',
-               'group flex flex-1 rounded-sm text-sm leading-6 font-semiboldh-8'
+                  ? ' text-icon-active  bg-gray-800'
+                  : 'bg-[#3B7BF3] text-white ',
+               'group flex flex-1 rounded-sm text-sm leading-6 font-bold h-8'
             )}
          >
             <div

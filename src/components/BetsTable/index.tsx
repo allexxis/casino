@@ -88,6 +88,7 @@ const BetsTable: FC = () => {
                      <tr
                         className={classNames(
                            i % 2 === 0 ? 'bg-[#363C48]' : '',
+                           'bg-[#131826] border border-gray-600 mt-2',
                            'cursor-pointer rounded-md hover:scale-105 text-l flex'
                         )}
                         key={bet.id}

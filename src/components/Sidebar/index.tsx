@@ -14,7 +14,7 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
    const completePath = usePathname();
    const pathname = completePath.slice(3, completePath.length);
    return (
-      <div className="flex flex-none flex-col gap-y-5 overflow-y-auto bg-primary  w-[10rem] min-h-full border-r">
+      <div className="flex flex-none flex-col gap-y-5 overflow-y-auto bg-[#101520]  w-[10rem] min-h-full border-r border-gray-600">
          <div className="flex h-16 shrink-0 items-start justify-center text-white">
             {/* <Image
                className="h-8 w-auto"
